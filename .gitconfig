@@ -1,0 +1,7 @@
+[user]
+	email = 72691412+cheatsnake@users.noreply.github.com
+	name = cheatsnake
+[init]
+	defaultBranch = master
+[pull]
+	ff = only
