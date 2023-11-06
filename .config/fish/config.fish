@@ -4,7 +4,10 @@ alias bat="batcat"
 # ENV
 set EDITOR micro
 
-# lf file terminal setup
+## PATH
+fish_add_path -a ~/go/bin
+
+# lf with changing directory
 function lfcd
     set tmp (mktemp)
     # `command` is needed in case `lfcd` is aliased to `lf`
