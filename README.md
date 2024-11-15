@@ -2,13 +2,11 @@
 
 This repository contains a list of programs and configuration files for these programs that I use for development. Feel free to use and modify it according to your needs.
 
-## Distro
+## Distros
 
-I prefer Debian-based distros. So I actually use:
-
--   [Linux Mint](https://en.wikipedia.org/wiki/Linux_Mint) - on laptopts.
--   [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu) - on WSL and VPS.
--   [Pure Debian](https://en.wikipedia.org/wiki/Debian) - on PCs.
+-   [Debian](https://en.wikipedia.org/wiki/Debian)
+-   [Linux Mint](https://en.wikipedia.org/wiki/Linux_Mint)
+-   [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu)
 
 ## Terminal emulator
 
@@ -19,16 +17,15 @@ I prefer Debian-based distros. So I actually use:
 
 ## Shell
 
--   [bash](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>) - on servers.
--   [fish](https://github.com/fish-shell/fish-shell) - on my own machines.
+-   [fish](https://github.com/fish-shell/fish-shell)
     ```sh
     cp -r ./.config/fish ~/.config
     ```
-    -   [Official documentation](https://fishshell.com/docs/current/faq.html)
 
 ## Text editors/viewers
 
--   [VS code](https://code.visualstudio.com/download) - for regular codding.
+-   [VS code](https://code.visualstudio.com/download)
+-   [NvChad](https://github.com/NvChad/NvChad) - best config for [Neovim](https://github.com/neovim/neovim).
 -   [micro](https://github.com/zyedidia/micro) - for quick file editing.
 -   [batcat](https://github.com/sharkdp/bat) - as `cat` alternative with syntax highlighting.
 
@@ -43,8 +40,11 @@ I prefer Debian-based distros. So I actually use:
 
 ## File system
 
--   [gdu](https://github.com/dundee/gdu) - for viewing disk usage and deleting some stuff.
+-   [gdu](https://github.com/dundee/gdu) - for viewing disk usage and deleting files.
 -   [lf](https://github.com/gokcehan/lf) - for quick navigation.
+    ```sh
+    cp -r ./.config/lf ~/.config
+    ```
     -   [lfcd integration for fish](https://github.com/gokcehan/lf/blob/master/etc/lfcd.fish) - for navigating with changing directory.
 
 ## System monitor
@@ -57,14 +57,13 @@ I prefer Debian-based distros. So I actually use:
 -   [Node.js](https://nodejs.org) - for full-stack web dev.
     -   [nvm (node version manager)](https://github.com/nvm-sh/nvm)
     -   [npkill (find and delete node_modules)](https://github.com/voidcosmos/npkill)
--   [Python](https://python.org) - for ML.
 
 ## Databases
 
--   [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL) - for big enterpice projects.
+-   [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL)
     -   [Usage with Docker](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/)
     -   [psql cheatsheet](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
--   [MongoDB](https://en.wikipedia.org/wiki/MongoDB) - for regular projects or for those cases when you need to prototype quickly.
+-   [MongoDB](https://en.wikipedia.org/wiki/MongoDB)
     -   [Usage with Docker](https://www.mongodb.com/compatibility/docker)
 -   [Redis](https://en.wikipedia.org/wiki/Redis)
     -   [Usage with Docker](https://redis.io/docs/install/install-stack/docker/)
