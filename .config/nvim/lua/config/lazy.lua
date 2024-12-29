@@ -15,16 +15,21 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+--vim.g.mapleader = " "
+--vim.g.maplocalleader = "\\"
 
 local plugins = {
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     { 'nvim-telescope/telescope.nvim', tag = '0.1.8', dependencies = { 'nvim-lua/plenary.nvim' }},
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    { 'echasnovski/mini.nvim', version = false }, 
+    { "nvim-tree/nvim-tree.lua", version = "*" }, 
 }
 
-local opts = {}
+
+local opts = {
+    checker = { enabled = true }, 
+}
 
 -- Setup lazy.nvim
 require("lazy").setup(plugins, opts)
