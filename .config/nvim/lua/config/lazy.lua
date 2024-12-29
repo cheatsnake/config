@@ -24,6 +24,7 @@ local plugins = {
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     { 'echasnovski/mini.nvim', version = false }, 
     { "nvim-tree/nvim-tree.lua", version = "*" }, 
+    require("config.lsp"), 
 }
 
 
