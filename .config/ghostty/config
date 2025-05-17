@@ -1,0 +1,3 @@
+maximize=true
+font-size=19
+command = TERM=xterm-256color /usr/bin/fish

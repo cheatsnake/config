@@ -1,0 +1,8 @@
+theme = "github_dark_dimmed"
+
+[editor]
+true-color = true
+line-number = "relative"
+
+[editor.file-picker]
+hidden = false

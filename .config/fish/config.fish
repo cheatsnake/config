@@ -1,11 +1,18 @@
 # ALISASES
-alias bat="batcat"
+# alias bat="batcat"
 
 # ENV
 set EDITOR micro
 
-## PATH
+# NVM
+set -x NVM_DIR ~/.nvm
+bass source ~/.nvm/nvm.sh
+
+# PATH
 fish_add_path -a ~/go/bin
+fish_add_path -a ~/.local/bin
+fish_add_path -a /usr/local/go/bin
+fish_add_path -a ~/.pyenv
 
 # lf with changing directory
 function lfcd
