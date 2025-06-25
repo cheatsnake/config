@@ -13,6 +13,7 @@ fish_add_path -a ~/go/bin
 fish_add_path -a ~/.local/bin
 fish_add_path -a /usr/local/go/bin
 fish_add_path -a ~/.pyenv
+fish_add_path -a /opt/homebrew/bin
 
 # lf with changing directory
 function lfcd
