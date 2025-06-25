@@ -2,9 +2,3 @@ set drawbox true
 set hidden true
 set dirfirst true
 set dircounts true
-
-cmd preview ${{
-    bat --color=always --style=numbers,changes --line-range=:500 "$1"
-}}
-
-set previewer "lf -remote 'send $id preview \"$f\"'"

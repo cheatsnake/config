@@ -1,5 +1,5 @@
 # ALISASES
-# alias bat="batcat"
+#alias bat="batcat"
 
 # ENV
 set EDITOR micro
@@ -8,7 +8,7 @@ set EDITOR micro
 set -x NVM_DIR ~/.nvm
 bass source ~/.nvm/nvm.sh
 
-# PATH
+## PATH
 fish_add_path -a ~/go/bin
 fish_add_path -a ~/.local/bin
 fish_add_path -a /usr/local/go/bin

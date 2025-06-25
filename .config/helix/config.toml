@@ -1,5 +1,5 @@
 theme = "github_dark_dimmed"
-
+#theme = "github_light"
 [editor]
 true-color = true
 line-number = "relative"
