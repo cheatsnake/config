@@ -5,7 +5,7 @@ fish-copy:
 ghostty-copy:
 	cp -rf ~/.config/ghostty ~/repos/config/.config/
 helix-copy:
-	cp -rf ~/.config/helix ~/repos/config/.config/
+	cp -rf ~/.config/helix/config.toml ~/repos/config/.config/helix
 htop-copy:
 	cp -rf ~/.config/htop ~/repos/config/.config/
 btop-copy:
