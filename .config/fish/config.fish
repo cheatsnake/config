@@ -4,10 +4,6 @@
 # ENV
 set EDITOR micro
 
-# NVM
-set -x NVM_DIR ~/.nvm
-bass source ~/.nvm/nvm.sh
-
 ## PATH
 fish_add_path -a ~/go/bin
 fish_add_path -a ~/.local/bin
