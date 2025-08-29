@@ -12,23 +12,25 @@ source ~/.zsh_plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 HISTSIZE=5000
-HISTFILE=~/.zsh_history
-SAVEHIST=$HISTSIZE
-HISTDUP=erase
+SAVEHIST=5000
+HISTFILE=$HOME/.zsh_history
+
+setopt inc_append_history
+setopt share_history
 setopt hist_ignore_all_dups
-setopt hist_save_no_dups
 setopt hist_ignore_dups
+setopt hist_save_no_dups
 setopt hist_find_no_dups
 setopt hist_ignore_space
-bindkey '^p' history-search-backward
-bindkey '^n' history-serach-forward
+bindkey '^[k' history-search-backward
+bindkey '^[j' history-serach-forward
+
+alias ls="ls --color"
+alias gc="git commit -m"
 
 lfcd () {
     cd "$(command lf -print-last-dir "$@")"
 }
-
-alias ls="ls --color"
-alias gc="git commit -m"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
